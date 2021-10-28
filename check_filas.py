@@ -1,9 +1,9 @@
 from caso_test_solvoku import *
 
 def check_filas(sudoku):
-	for lista in sudoku:
-		for numero in lista:
-			if lista.count(numero) > 1:
+	for fila in sudoku:
+		for numero in fila:
+			if fila.count(numero) > 1:
 				return False
 	return True
 
