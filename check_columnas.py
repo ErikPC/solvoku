@@ -3,10 +3,10 @@ from caso_test_solvoku import *
 def check_columnas(sudoku):
     longitud = len(sudoku)
     for i in range(longitud):
+        # i es el index actual de la fila, j es el index actual de la columna.
+        # añade a columna cada numero en el index actual de todas las filas.
+        # entonces tenemos todos los index 0 de las filas almacenados en la columna.
         columna = [sudoku[j][i] for j in range(longitud)]
-# i es el index actual de la fila, j es el index actual de la columna.
-# añade a columna cada numero en el index actual de todas las filas.
-# entonces tenemos todos los index 0 de las filas almacenados en la columna.
         for numero in columna:
             if columna.count(numero) > 1:
                 return False
