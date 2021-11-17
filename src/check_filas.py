@@ -1,4 +1,4 @@
-from caso_test_solvoku import *
+from ..test.caso_test_solvoku import *
 
 def check_filas(sudoku):
 	for fila in sudoku:
